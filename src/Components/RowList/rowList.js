@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { Input, Button } from 'antd';
-import { Button as AntButton } from 'antd';
 import Operator from '../Operator/operator';
+import ButtonComponent from '../Button/button';
+import Result from '../Result/result';
+import '../RowList/rowList.css'
 
-
-
-
-
-
-function RowList() {
+const RowList = ()  => {
   const [newRow, setNewRow] = useState([]);
 
   const clickHandler = () => {
@@ -54,10 +51,11 @@ function RowList() {
 
   return (
     <div className="row">
-       <AntButton onClick={clickHandler}>Add rows</AntButton>
+       <ButtonComponent clickHandler={clickHandler} />
+
       <ul>
         <div className="result">
-          <p>Result {calculateTotal()}</p>
+        <Result total={calculateTotal()} />
         </div>
         {newRow.map((row, index) => (
           <li key={index}>

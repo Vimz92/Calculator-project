@@ -3,7 +3,7 @@ import { Select } from 'antd';
 
 const { Option } = Select;
 
-function Operator({ index, operator, operatorHandler }) {
+const Operator = ({ index, operator, operatorHandler })  => {
   return (
     <Select value={operator} onChange={(value) => operatorHandler(index, value)}>
       <Option value="+"> + </Option>

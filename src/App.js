@@ -1,18 +1,14 @@
 import React from 'react';
 import './App.css';
-
-import Button from './Components/Button/button';
 import RowList from './Components/RowList/rowList';
 
 
-
-function App() {
+const App = () => {
   return (
-    <div className="container">
-      <div className="content-container">
-        <Button />
-        <br />
+    <div className="main-container">
+      <div className="sub-container">
         <RowList />
+
       </div>
     </div>
   );

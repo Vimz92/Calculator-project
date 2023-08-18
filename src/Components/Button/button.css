@@ -1,0 +1,23 @@
+.mainBtn {
+    background-color: #6D1BEC;
+    color: whitesmoke;
+    border-color: #6D1BEC;
+    outline: none;
+    border: #6D1BEC;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-btn-default:not(:disabled):not(.ant-btn-disabled):active {
+    color: whitesmoke;
+    border-color: #6D1BEC;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: whitesmoke;
+    border-color: #6D1BEC;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-input:placeholder-shown {
+    text-overflow: ellipsis;
+    background-color: white;
+    color: black;
+}
