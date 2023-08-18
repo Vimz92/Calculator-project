@@ -1,38 +1,73 @@
-.App {
+.container {
   text-align: center;
+  margin-top: 30px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-container {
+  background: #64BFAF;
+  padding: 20px; /* Add padding to space out content from the edges */
+  display: inline-block; /* Center content horizontally */
+  text-align: center; /*
+  h Align content to the left within the container */
+  height: 80vh;
+  width: 30%;
+  overflow: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  /* padding: 5px; */
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: red;
   color: white;
+  border-color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.result {
+
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result p {
+  font-size: 18px;
 }
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  color: whitesmoke;
+  border-color: red;
+}
+
+
